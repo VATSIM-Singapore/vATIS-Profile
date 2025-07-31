@@ -1,8 +1,8 @@
 {
   "name": "Singapore",
-  "id": "90792f31-a54b-439e-8ed7-fe4513417a58",
+  "id": "92fa6917-8158-456f-b84b-68bc1a91f15c",
   "updateUrl": "https://raw.githubusercontent.com/VATSIM-Singapore/vATIS-Profile/refs/heads/main/vATIS%20Profile%20-%20Singapore.json",
-  "updateSerial": 2025052800,
+  "updateSerial": 2025080100,
   "stations": [
     {
       "id": "a8df3f38-5809-4954-b033-1f0026a5cf5e",
@@ -17,11 +17,12 @@
       "atisFormat": {
         "observationTime": {
           "standardUpdateTime": [
-            0
+            0,
+            30
           ],
           "template": {
-            "text": "TIME {time}Z",
-            "voice": "TIME {time}"
+            "text": "TIME {time}Z.",
+            "voice": "TIME, {time}."
           }
         },
         "surfaceWind": {
@@ -32,31 +33,31 @@
           },
           "standard": {
             "template": {
-              "text": "WIND {wind_dir}{wind_spd}KT",
-              "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS "
+              "text": "WIND {wind_dir}/{wind_spd}KT",
+              "voice": "WIND, {wind_dir} DEGREES, {wind_spd} KNOTS."
             }
           },
           "standardGust": {
             "template": {
-              "text": "WIND {wind_dir}{wind_spd}G{wind_gust}KT",
-              "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS, GUSTING {wind_gust}"
+              "text": "WIND {wind_dir}/{wind_spd}KT GUST {wind_gust}KT",
+              "voice": "WIND, {wind_dir} DEGREES, {wind_spd} KNOTS, GUSTING TO {wind_gust} KNOTS."
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
-              "voice": "DIRECTION VARIABLE {wind_spd}"
+              "text": "WIND VRB/{wind_spd}KT",
+              "voice": "WIND, DIRECTION VARIABLE, {wind_spd} KNOTS"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
-              "voice": "DIRECTION VARIABLE {wind_spd} KNOTS, GUSTING {wind_gust}"
+              "text": "WIND VRB/{wind_spd}KT GUST {wind_gust}KT",
+              "voice": "WIND, DIRECTION VARIABLE, {wind_spd} KNOTS, GUSTING TO {wind_gust} KNOTS."
             }
           },
           "variableDirection": {
             "template": {
-              "text": "VRB {wind_vmin}V{wind_vmax}",
+              "text": "VRB BTN {wind_vmin} AND {wind_vmax} DEG",
               "voice": "DIRECTION VARIABLE BETWEEN {wind_vmin} AND {wind_vmax} DEGREES"
             }
           },
@@ -64,7 +65,7 @@
             "calmWindSpeed": 0,
             "template": {
               "text": "WIND CALM",
-              "voice": "WIND CALM"
+              "voice": "WIND, CALM."
             }
           }
         },
@@ -77,19 +78,19 @@
           "southWest": "to the south-west",
           "west": "to the west",
           "northWest": "to the north-west",
-          "unlimitedVisibilityVoice": "visibility 10 kilometers ",
+          "unlimitedVisibilityVoice": "visibility, 10 kilometers ",
           "unlimitedVisibilityText": "VIS 10KM",
           "includeVisibilitySuffix": true,
           "metersCutoff": 5000,
           "template": {
             "text": "VIS {visibility}",
-            "voice": "VISIBILITY {visibility}"
+            "voice": "VISIBILITY, {visibility}"
           }
         },
         "runwayVisualRange": {
-          "neutralTendency": "Neutral",
-          "goingUpTendency": "Going Up",
-          "goingDownTendency": "Going Down",
+          "neutralTendency": "Metres.",
+          "goingUpTendency": "Metres Upward Tendancy.",
+          "goingDownTendency": "Metres Downward Tendancy.",
           "template": {}
         },
         "presentWeather": {
@@ -1824,18 +1825,18 @@
             }
           },
           "template": {
-            "text": "{weather}",
-            "voice": "{weather}"
+            "text": "{weather}.",
+            "voice": "{weather}."
           }
         },
         "recentWeather": {
           "template": {
-            "text": "RECENT WEATHER {weather}",
-            "voice": "RECENT WEATHER {weather}"
+            "text": "RECENT WEATHER {weather}.",
+            "voice": "RECENT WEATHER {weather}."
           }
         },
         "clouds": {
-          "identifyCeilingLayer": true,
+          "identifyCeilingLayer": false,
           "identifyCeilingLayerTextAtis": false,
           "textAtisCeilingPrefix": "CIG",
           "cloudCeilingLayerTypes": [
@@ -1854,24 +1855,24 @@
           },
           "types": {
             "FEW": {
-              "text": "FEW{altitude}",
-              "voice": "few {altitude}"
+              "text": "FEW {convective} {altitude:1}00FT",
+              "voice": "few {convective}, {altitude} feet"
             },
             "SCT": {
-              "text": "SCT{altitude}{convective}",
-              "voice": "{altitude} scattered {convective}"
+              "text": "SCT {convective} {altitude:1}00FT",
+              "voice": "scattered {convective}, {altitude} feet"
             },
             "BKN": {
-              "text": "BKN{altitude}{convective}",
-              "voice": "{altitude} broken {convective}"
+              "text": "BKN {convective} {altitude:1}00FT",
+              "voice": "broken {convective}, {altitude} feet"
             },
             "OVC": {
-              "text": "OVC{altitude}{convective}",
-              "voice": "{altitude} overcast {convective}"
+              "text": "OVC {convective} {altitude:1}00FT",
+              "voice": "overcast {convective}, {altitude} feet"
             },
             "VV": {
-              "text": "VV{altitude}",
-              "voice": "indefinite ceiling {altitude}"
+              "text": "VV {altitude:1}00FT",
+              "voice": "indefinite ceiling, {altitude} feet"
             },
             "NSC": {
               "text": "NSC",
@@ -1891,51 +1892,51 @@
             }
           },
           "convectiveTypes": {
-            "CB": "cumulonimbus",
+            "CB": "C-B",
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "CLOUD {clouds}",
-            "voice": "cloud {clouds}"
+            "text": "CLOUD {clouds}.",
+            "voice": "cloud, {clouds}."
           }
         },
         "temperature": {
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "TEMP {temp}",
-            "voice": "TEMPERATURE {temp}"
+            "text": "TEMP {temp}.",
+            "voice": "TEMPERATURE, {temp}."
           }
         },
         "dewpoint": {
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "DEWPOINT {dewpoint}",
-            "voice": "DEWPOINT {dewpoint}"
+            "text": "DEWPT {dewpoint}.",
+            "voice": "DEWPOINT, {dewpoint}."
           }
         },
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "QNH {altimeter} HPA",
-            "voice": "QUEUE ANN HAITCH {altimeter} hectopascals."
+            "text": "QNH {altimeter} HPA.",
+            "voice": "QUEUE ANN HAITCH, {altimeter}, hectopascals."
           }
         },
         "trend": {
           "nosigText": "NOSIG",
-          "nosigVoice": "No Significant Changes",
+          "nosigVoice": "nosig",
           "becomingText": "BECMG",
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
-          "temporaryVoice": "Temporary",
+          "temporaryVoice": "Tempo",
           "template": {}
         },
         "windShear": {
-          "runwayText": "WS R{Runway}",
-          "runwayVoice": "Wind Shear Runway {Runway}",
-          "allRunwayText": "WS ALL RWY",
-          "allRunwayVoice": "Wind Shear All Runways",
+          "runwayText": "WS R{Runway}.",
+          "runwayVoice": "Wind Shear Warning, Wind Shear observed on approach to Runway {Runway}",
+          "allRunwayText": "WS ALL RWY.",
+          "allRunwayVoice": "Wind Shear Warning, Wind Shear observed in the vicinity of the aerodrome.",
           "template": {}
         },
         "transitionLevel": {
@@ -1960,8 +1961,8 @@
         "closingStatement": {
           "autoIncludeClosingStatement": false,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ACK ATIS {letter}.",
+            "voice": "ACKNOWLEDGE AY TEES {letter|word}."
           }
         }
       },
@@ -1973,36 +1974,23 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "UK Female",
-        "speechRate": 180
+        "speechRate": 150
       },
       "presets": [
         {
           "id": "a882932b-9295-4ec7-ae80-c1a1549bf0da",
-          "name": "SEMI-MIXED DEPENDENT",
+          "name": "ARR CONFIG",
           "airportConditions": "",
           "notams": "",
-          "template": "SINGAPORE CHANGI APRT, ARR, INFO [ATIS_CODE]. [OBS_TIME]. SIMUL PARALLEL DEPENDENT APCHS ARE BEING CONDUCTED. [ARPT_COND]. [SURFACE_WIND]. [PREVAILING_VISIBILITY]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [NOTAMS]. ACK INFO [ATIS_CODE].",
+          "template": "AWSSS INF [ATIS_CODE]. [OBS_TIME] [ARPT_COND] [NOTAMS] [SURFACE_WIND]. [PREVAILING_VISIBILITY]. [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [TREND]. [WS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
-          "id": "ae4fcb91-13ec-4766-be49-af575819583c",
-          "name": "SEMI-MIXED INDEPENDENT",
-          "airportConditions": "",
-          "template": "SINGAPORE CHANGI APRT, ARR, INFO [ATIS_CODE]. [OBS_TIME]. SIMUL PARALLEL INDEPENDENT APCHS ARE BEING CONDUCTED. [ARPT_COND]. [SURFACE_WIND]. [PREVAILING_VISIBILITY]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [NOTAMS]. ACK INFO [ATIS_CODE].",
-          "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
-          "id": "31d27d95-d5c9-457a-bcda-b5a1ca748dc1",
-          "name": "SINGLE RWY",
-          "airportConditions": "",
-          "notams": "",
-          "template": "SINGAPORE CHANGI APRT, ARR, INFO [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [SURFACE_WIND]. [PREVAILING_VISIBILITY]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [NOTAMS]. ACK INFO [ATIS_CODE].",
-          "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -2021,11 +2009,6 @@
           "variableName": "SEG",
           "text": "SEG",
           "voice": "SEGREGATED"
-        },
-        {
-          "variableName": "TEMP",
-          "text": "TEMP",
-          "voice": "TEMPERATURE"
         },
         {
           "variableName": "HPA",
@@ -2101,126 +2084,146 @@
           "variableName": "A464",
           "text": "A464",
           "voice": "ALPHA FOUR SIX FOUR AIRWAY"
+        },
+        {
+          "variableName": "AWSSS",
+          "text": "WSSS ARR",
+          "voice": "SINGAPORE CHANGI ARPT, ARRIVAL,"
+        },
+        {
+          "variableName": "INF",
+          "text": "ATIS",
+          "voice": "INFOR"
         }
       ],
       "airportConditionDefinitions": [
         {
-          "text": "EXP ILS APP RWY 02L",
+          "text": "SIMUL PARALLEL DEPENDENT APCHS ARE BEING CONDUCTED.",
+          "ordinal": 1,
+          "enabled": true
+        },
+        {
+          "text": "SIMUL PARALLEL INDEPENDENT APCHS ARE BEING CONDUCTED.",
+          "ordinal": 2,
+          "enabled": false
+        },
+        {
+          "text": "EXP ILS APP, RWY 02L.",
           "ordinal": 3,
           "enabled": false
         },
         {
-          "text": "EXP ILS APP RWY 02C",
+          "text": "EXP ILS APP, RWY 02C.",
           "ordinal": 4,
           "enabled": false
         },
         {
-          "text": "EXP RNP APP RWY 02R",
+          "text": "EXP ILS APP, RWY 02R.",
           "ordinal": 5,
           "enabled": false
         },
         {
-          "text": "EXP ILS APP RWY 20R",
+          "text": "EXP ILS APP, RWY 20R.",
           "ordinal": 6,
           "enabled": false
         },
         {
-          "text": "EXP ILS APP RWY 20C",
+          "text": "EXP ILS APP, RWY 20C.",
           "ordinal": 7,
           "enabled": false
         },
         {
-          "text": "EXP RNP APP RWY 20L",
+          "text": "EXP RNP APP, RWY 20L.",
           "ordinal": 8,
           "enabled": false
         },
         {
-          "text": "EXP ILS APP RWY 20R OR RWY 20C. EXP LDG RWY 20R",
+          "text": "EXP ILS APP, RWY 20R, OR RWY 20C. EXP LDG RWY 20R.",
           "ordinal": 9,
-          "enabled": false
-        },
-        {
-          "text": "EXP ILS APP RWY 02L OR RWY 02C. EXP LDG RWY 02L\r\n",
-          "ordinal": 10,
           "enabled": true
         },
         {
-          "text": "EXP ILS APP RWY 20R OR RNP APP RWY 20L. EXP LDG RWY 20R",
+          "text": "EXP ILS APP, RWY 02L, OR RWY 02C. EXP LDG RWY 02L.",
+          "ordinal": 10,
+          "enabled": false
+        },
+        {
+          "text": "EXP ILS APP, RWY 20R, OR RNP APP, RWY 20L. EXP LDG RWY 20R.",
           "ordinal": 11,
           "enabled": false
         },
         {
-          "text": "EXP ILS APP RWY 20C OR RNP APP RWY 20L EXP LDG RWY 20C",
+          "text": "EXP ILS APP, RWY 20C, OR RNP APP, RWY 20L. EXP LDG RWY 20C.",
           "ordinal": 12,
           "enabled": false
         },
         {
-          "text": "EXP ILS APP RWY 02L OR RNP APP RWY 02R. EXP LDG RWY 02L",
+          "text": "EXP ILS APP, RWY 02L, OR RWY 02R. EXP LDG RWY 02L.",
           "ordinal": 13,
           "enabled": false
         },
         {
-          "text": "EXP ILS APP RWY 02C OR RNP APP RWY 02R. EXP LDG RWY 02C",
+          "text": "EXP ILS APP, RWY 02C, OR RWY 02R. EXP LDG RWY 02C.",
           "ordinal": 14,
           "enabled": false
         },
         {
-          "text": "RWY 02L ^20R CLOSED",
+          "text": "RWY 02L ^20R CLOSED.",
           "ordinal": 15,
           "enabled": false
         },
         {
-          "text": "RWY 02C ^20C CLOSED",
+          "text": "RWY 02C ^20C CLOSED.",
           "ordinal": 16,
-          "enabled": true
+          "enabled": false
         },
         {
-          "text": "RWY 02R ^20L CLOSED",
+          "text": "RWY 02R ^20L CLOSED.",
           "ordinal": 17,
           "enabled": false
         },
         {
-          "text": "RWY 20R ^02L CLOSED",
+          "text": "RWY 20R ^02L CLOSED.",
           "ordinal": 18,
           "enabled": false
         },
         {
-          "text": "RWY 20C ^02C CLOSED",
+          "text": "RWY 20C ^02C CLOSED.",
           "ordinal": 19,
           "enabled": false
         },
         {
-          "text": "RWY 20L ^02R CLOSED",
+          "text": "RWY 20L ^02R CLOSED.",
           "ordinal": 20,
           "enabled": false
         },
         {
-          "text": "RWY 02C ^20C AND RWY 02R ^20L CLOSED",
+          "text": "RWY 02C ^20C, AND RWY 02R ^20L CLOSED.",
           "ordinal": 21,
           "enabled": false
         },
         {
-          "text": "RWY 02L ^20R AND RWY 02R ^20L CLOSED",
+          "text": "RWY 02L ^20R, AND RWY 02R ^20L CLOSED.",
           "ordinal": 22,
           "enabled": false
         },
         {
-          "text": "RWY 02L ^20R AND RWY 02C ^20C CLOSED",
+          "text": "RWY 02L ^20R, AND RWY 02C ^20C CLOSED.",
           "ordinal": 23,
           "enabled": false
         },
         {
-          "text": "RWY 20C ^02C AND RWY 20L ^02R CLOSED",
+          "text": "RWY 20C ^02C, AND RWY 20L ^02R CLOSED.",
           "ordinal": 24,
           "enabled": false
         },
         {
-          "text": "RWY 20R ^02L AND RWY 20L ^02R CLOSED",
+          "text": "RWY 20R ^02L, AND RWY 20L ^02R CLOSED.",
           "ordinal": 25,
           "enabled": false
         },
         {
-          "text": "RWY 20R ^02L AND RWY 20C ^02C CLOSED",
+          "text": "RWY 20R ^02L, AND RWY 20C ^02C CLOSED.",
           "ordinal": 26,
           "enabled": false
         }
@@ -2237,28 +2240,23 @@
           "enabled": true
         },
         {
-          "text": "NEW STARS EFF AIRAC 2403.",
-          "ordinal": 3,
-          "enabled": false
-        },
-        {
           "text": "ARR VIA A464 EXP TO JOIN TEBUN STAR AFTER ARAMA.",
-          "ordinal": 4,
+          "ordinal": 3,
           "enabled": true
         },
         {
           "text": "ADVS ATC IF UNBLE TO LND ON RWY 02C IF OFFERED.",
-          "ordinal": 5,
+          "ordinal": 4,
           "enabled": false
         },
         {
           "text": "ADVS ATC IF UNBLE TO LND ON RWY 20C IF OFFERED.",
-          "ordinal": 6,
+          "ordinal": 5,
           "enabled": false
         },
         {
           "text": "VFR TFC CONDUCTING VIS CCTS IN THE VCNTY OF CHANGI AD.",
-          "ordinal": 7,
+          "ordinal": 6,
           "enabled": false
         }
       ]
@@ -2279,8 +2277,8 @@
             0
           ],
           "template": {
-            "text": "TIME {time}Z",
-            "voice": "TIME {time}"
+            "text": "TIME {time}Z.",
+            "voice": "TIME, {time}."
           }
         },
         "surfaceWind": {
@@ -2291,39 +2289,39 @@
           },
           "standard": {
             "template": {
-              "text": "WIND {wind_dir}{wind_spd}KT",
-              "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS"
+              "text": "WIND {wind_dir}/{wind_spd}KT",
+              "voice": "WIND, {wind_dir} DEGREES, {wind_spd} KNOTS."
             }
           },
           "standardGust": {
             "template": {
-              "text": "WIND {wind_dir}{wind_spd}G{wind_gust}KT",
-              "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS, GUSTS {wind_gust}"
+              "text": "WIND {wind_dir}/{wind_spd}KT GUST {wind_gust}KT",
+              "voice": "WIND, {wind_dir} DEGREES, {wind_spd} KNOTS, GUSTING TO {wind_gust} KNOTS."
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
-              "voice": "DIRECTION VARIABLE {wind_spd} KNOTS"
+              "text": "WIND VRB/{wind_spd}KT",
+              "voice": "WIND, DIRECTION VARIABLE, {wind_spd} KNOTS."
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
-              "voice": "DIRECTION VARIABLE {wind_spd} KNOTS, GUSTING {wind_gust}"
+              "text": "WIND VRB/{wind_spd}KT GUST {wind_gust}KT",
+              "voice": "WIND, DIRECTION VARIABLE, {wind_spd} KNOTS, GUSTING TO {wind_gust} KNOTS."
             }
           },
           "variableDirection": {
             "template": {
-              "text": "VRB {wind_vmin}V{wind_vmax}",
-              "voice": "DIRECTION VARIABLE BETWEEN {wind_vmin} AND {wind_vmax} DEGREES"
+              "text": "VRB BTN {wind_vmin} AND {wind_vmax} DEG",
+              "voice": "DIRECTION VARIABLE BETWEEN {wind_vmin} AND {wind_vmax} DEGREES."
             }
           },
           "calm": {
             "calmWindSpeed": 0,
             "template": {
               "text": "WIND CALM",
-              "voice": "WIND CALM"
+              "voice": "WIND, CALM."
             }
           }
         },
@@ -2336,19 +2334,19 @@
           "southWest": "to the south-west",
           "west": "to the west",
           "northWest": "to the north-west",
-          "unlimitedVisibilityVoice": "visibility 10 kilometers",
+          "unlimitedVisibilityVoice": "visibility, 10 kilometers",
           "unlimitedVisibilityText": "VIS 10KM",
           "includeVisibilitySuffix": true,
           "metersCutoff": 5000,
           "template": {
             "text": "VIS {visibility}",
-            "voice": "VISIBILITY {visibility}"
+            "voice": "VISIBILITY, {visibility}"
           }
         },
         "runwayVisualRange": {
-          "neutralTendency": "Neutral",
-          "goingUpTendency": "Going Up",
-          "goingDownTendency": "Going Down",
+          "neutralTendency": "Metres.",
+          "goingUpTendency": "Metres Upward Tendancy.",
+          "goingDownTendency": "Metres Downward Tendancy.",
           "template": {}
         },
         "presentWeather": {
@@ -4083,18 +4081,18 @@
             }
           },
           "template": {
-            "text": "{weather}",
-            "voice": "{weather}"
+            "text": "{weather}.",
+            "voice": "{weather}."
           }
         },
         "recentWeather": {
           "template": {
-            "text": "RECENT WEATHER {weather}",
-            "voice": "RECENT WEATHER {weather}"
+            "text": "RECENT WEATHER {weather}.",
+            "voice": "RECENT WEATHER {weather}."
           }
         },
         "clouds": {
-          "identifyCeilingLayer": true,
+          "identifyCeilingLayer": false,
           "identifyCeilingLayerTextAtis": false,
           "textAtisCeilingPrefix": "CIG",
           "cloudCeilingLayerTypes": [
@@ -4113,24 +4111,24 @@
           },
           "types": {
             "FEW": {
-              "text": "FEW{altitude}",
-              "voice": "few {altitude}"
+              "text": "FEW {convective} {altitude:1}00FT",
+              "voice": "few {convective}, {altitude} feet"
             },
             "SCT": {
-              "text": "SCT{altitude}{convective}",
-              "voice": "{altitude} scattered {convective}"
+              "text": "SCT {convective} {altitude:1}00FT",
+              "voice": "scattered {convective}, {altitude} feet"
             },
             "BKN": {
-              "text": "BKN{altitude}{convective}",
-              "voice": "{altitude} broken {convective}"
+              "text": "BKN {convective} {altitude:1}00FT",
+              "voice": "broken {convective}, {altitude} feet"
             },
             "OVC": {
-              "text": "OVC{altitude}{convective}",
-              "voice": "{altitude} overcast {convective}"
+              "text": "OVC {convective} {altitude:1}00FT",
+              "voice": "overcast {convective}, {altitude} feet"
             },
             "VV": {
-              "text": "VV{altitude}",
-              "voice": "indefinite ceiling {altitude}"
+              "text": "VV {altitude:1}00FT",
+              "voice": "indefinite ceiling, {altitude} feet"
             },
             "NSC": {
               "text": "NSC",
@@ -4150,51 +4148,51 @@
             }
           },
           "convectiveTypes": {
-            "CB": "cumulonimbus",
+            "CB": "C-B",
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "{clouds}",
-            "voice": "{clouds}"
+            "text": "CLOUD {clouds}.",
+            "voice": "cloud, {clouds}."
           }
         },
         "temperature": {
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "TEMP {temp}",
-            "voice": "TEMPERATURE {temp}"
+            "text": "TEMP {temp}.",
+            "voice": "TEMPERATURE, {temp}."
           }
         },
         "dewpoint": {
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "DEWPOINT {dewpoint}",
-            "voice": "DEWPOINT {dewpoint}"
+            "text": "DEWPT {dewpoint}.",
+            "voice": "DEWPOINT, {dewpoint}."
           }
         },
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "QNH {altimeter} HPA",
-            "voice": "QUEUE ANN HAITCH {altimeter} hectopascals."
+            "text": "QNH {altimeter} HPA.",
+            "voice": "QUEUE ANN HAITCH, {altimeter}, hectopascals."
           }
         },
         "trend": {
           "nosigText": "NOSIG",
-          "nosigVoice": "No Significant Changes",
+          "nosigVoice": "nosig",
           "becomingText": "BECMG",
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
-          "temporaryVoice": "Temporary",
+          "temporaryVoice": "Tempo",
           "template": {}
         },
         "windShear": {
-          "runwayText": "WS R{Runway}",
-          "runwayVoice": "Wind Shear Runway {Runway}",
-          "allRunwayText": "WS ALL RWY",
-          "allRunwayVoice": "Wind Shear All Runways",
+          "runwayText": "WS R{Runway}.",
+          "runwayVoice": "Wind Shear Warning, Wind Shear observed on approach to Runway {Runway}.",
+          "allRunwayText": "WS ALL RWY.",
+          "allRunwayVoice": "Wind Shear Warning, Wind Shear observed in the vicinity of the aerodrome..",
           "template": {}
         },
         "transitionLevel": {
@@ -4213,8 +4211,8 @@
         "closingStatement": {
           "autoIncludeClosingStatement": false,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "ACK ATIS {letter} ON FIRST CTC WITH ATC.",
+            "voice": "ACKNOWLEDGE INFORMATION {letter|word}, ON FIRST CONTACT WITH ATC."
           }
         }
       },
@@ -4226,29 +4224,15 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "UK Female",
-        "speechRate": 180
+        "speechRate": 150
       },
       "presets": [
         {
           "id": "e35d427d-f9cc-4c4f-819c-dff37691cd77",
-          "name": "RWY 03",
-          "airportConditions": "RWY 03 IN USE.",
-          "template": "SINGAPORE SELETAR ARPT, INFO [ATIS_CODE]. [OBS_TIME]. EXP VISUAL APCH. [ARPT_COND]. ACFT ARE TO KEEP ALL TURNS WITHIN SELETAR CTZ. [SURFACE_WIND]. [PREVAILING_VISIBILITY]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [NOTAMS]. ACK INFO [ATIS_CODE].",
-          "externalGenerator": {
-            "enabled": false,
-            "textUrl": "",
-            "voiceUrl": "",
-            "arrival": "",
-            "departure": "",
-            "approaches": "",
-            "remarks": ""
-          }
-        },
-        {
-          "id": "976d8ca7-fb5c-4642-b206-2963e2d6797b",
-          "name": "RWY 21",
-          "airportConditions": "RWY 21 IN USE.",
-          "template": "SINGAPORE SELETAR ARPT, INFO [ATIS_CODE]. [OBS_TIME]. EXP VISUAL APCH. [ARPT_COND]. ACFT ARE TO KEEP ALL TURNS WITHIN SELETAR CTZ. [SURFACE_WIND]. [PREVAILING_VISIBILITY]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. [NOTAMS]. ACK INFO [ATIS_CODE].",
+          "name": "WSSL DEFAULT",
+          "airportConditions": "",
+          "notams": "",
+          "template": "AWSSL INF [ATIS_CODE]. [OBS_TIME] EXP VIS APCH. [ARPT_COND] [NOTAMS] [SURFACE_WIND]. [PREVAILING_VISIBILITY]. [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [WS] [CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -4275,10 +4259,62 @@
           "variableName": "ACK",
           "text": "ACK",
           "voice": "ACKNOWLEDGE"
+        },
+        {
+          "variableName": "DEPS",
+          "text": "DEPS",
+          "voice": "DEPARTURES"
+        },
+        {
+          "variableName": "ARRS",
+          "text": "ARRS",
+          "voice": "ARRIVALS"
+        },
+        {
+          "variableName": "HGT",
+          "text": "HGT",
+          "voice": "HEIGHT"
+        },
+        {
+          "variableName": "NMS",
+          "text": "NM",
+          "voice": "NAUTICAL MILES"
+        },
+        {
+          "variableName": "INF",
+          "text": "ATIS",
+          "voice": "INFOR"
+        },
+        {
+          "variableName": "AWSSL",
+          "text": "WSSL",
+          "voice": "SINGAPORE SELETAR ARPT,"
         }
       ],
-      "airportConditionDefinitions": [],
-      "notamDefinitions": []
+      "airportConditionDefinitions": [
+        {
+          "text": "RWY IN USE 03.",
+          "ordinal": 1,
+          "enabled": false
+        },
+        {
+          "text": "RWY IN USE 21.",
+          "ordinal": 2,
+          "enabled": true
+        }
+      ],
+      "notamDefinitions": [
+        {
+          "text": "RWY 03 DEPS AND RWY 21 ARRS, ARE TO BE ADVSD OF STEEL STRUCTURES AND SILO UP TO HGT 104 METRES, LOCATED 2 NMS NORTH OF THE RWY.",
+          "ordinal": 1,
+          "enabled": true
+        },
+        {
+          "text": "ACFT ARE TO KEEP ALL TURNS WITHIN SELETAR CTZ.",
+          "ordinal": 2,
+          "enabled": true
+        }
+      ]
     },
     {
       "id": "82c38384-eda6-4df9-ab83-e536713cf6ba",
@@ -4293,11 +4329,12 @@
       "atisFormat": {
         "observationTime": {
           "standardUpdateTime": [
-            0
+            0,
+            30
           ],
           "template": {
-            "text": "TIME {time}Z",
-            "voice": "TIME {time} "
+            "text": "TIME {time} UTC.",
+            "voice": "{special} WEATHER REPORT AT TIME {time} UTC."
           }
         },
         "surfaceWind": {
@@ -4308,36 +4345,36 @@
           },
           "standard": {
             "template": {
-              "text": "{wind_dir}{wind_spd}KT",
-              "voice": "WIND {wind_dir} AT {wind_spd}"
+              "text": "WIND {wind_dir}{wind_spd}KT",
+              "voice": "WIND AT {wind_dir} DEGREES WITH SPEED {wind_spd} KNOTS"
             }
           },
           "standardGust": {
             "template": {
-              "text": "{wind_dir}{wind_spd}G{wind_gust}KT",
-              "voice": "WIND {wind_dir} AT {wind_spd} GUSTS {wind_gust}"
+              "text": "WIND {wind_dir}{wind_spd}G{wind_gust}KT",
+              "voice": "WIND AT {wind_dir} DEGREES WITH SPEED {wind_spd} KNOTS GUSTING {wind_gust} KNOTS"
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
-              "voice": "DIRECTION VARIABLE AT {wind_spd}"
+              "text": "WIND VRB{wind_spd}KT",
+              "voice": "WIND IS VARIABLE WITH SPEED {wind_spd} KNOTS"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
-              "voice": "DIRECTION VARIABLE {wind_spd} GUSTS {wind_gust}"
+              "text": "WIND VRB{wind_spd}G{wind_gust}KT",
+              "voice": "WIND IS VARIABLE WITH SPEED {wind_spd} KNOTS GUSTING {wind_gust} KNOTS"
             }
           },
           "variableDirection": {
             "template": {
               "text": "VRB {wind_vmin}V{wind_vmax}",
-              "voice": "DIRECTION VARIABLE BETWEEN {wind_vmin} AND {wind_vmax}"
+              "voice": "DIRECTION VARIABLE BETWEEN {wind_vmin} AND {wind_vmax} DEGREES"
             }
           },
           "calm": {
-            "calmWindSpeed": 0,
+            "calmWindSpeed": 3,
             "template": {
               "text": "WIND CALM",
               "voice": "WIND CALM"
@@ -4353,19 +4390,19 @@
           "southWest": "to the south-west",
           "west": "to the west",
           "northWest": "to the north-west",
-          "unlimitedVisibilityVoice": "visibility 10 kilometers or more",
+          "unlimitedVisibilityVoice": "visibility 10 kilometer",
           "unlimitedVisibilityText": "VIS 10KM",
           "includeVisibilitySuffix": true,
           "metersCutoff": 5000,
           "template": {
-            "text": "{visibility}",
+            "text": "VIS {visibility}",
             "voice": "VISIBILITY {visibility}"
           }
         },
         "runwayVisualRange": {
-          "neutralTendency": "Neutral",
-          "goingUpTendency": "Going Up",
-          "goingDownTendency": "Going Down",
+          "neutralTendency": "No Change",
+          "goingUpTendency": "Increasing",
+          "goingDownTendency": "Decreasing",
           "template": {}
         },
         "presentWeather": {
@@ -5572,7 +5609,7 @@
             },
             "GS": {
               "text": "GS",
-              "spoken": "small hail, snow pellets"
+              "spoken": "small hail"
             },
             "HZ": {
               "text": "HZ",
@@ -6100,8 +6137,8 @@
             }
           },
           "template": {
-            "text": "{weather}",
-            "voice": "{weather}"
+            "text": "PRESENT WX {weather}.",
+            "voice": "PRESENT WEATHER {weather}."
           }
         },
         "recentWeather": {
@@ -6129,41 +6166,41 @@
             "voice": "RADAR DETECTED C-B CLOUDS"
           },
           "types": {
-            "FEW": {
-              "text": "FEW{altitude}",
-              "voice": "few clouds at {altitude}"
-            },
-            "SCT": {
-              "text": "SCT{altitude}{convective}",
-              "voice": "{altitude} scattered {convective}"
-            },
             "BKN": {
               "text": "BKN{altitude}{convective}",
-              "voice": "{altitude} broken {convective}"
+              "voice": "broken at {altitude} feet {convective}"
             },
-            "OVC": {
-              "text": "OVC{altitude}{convective}",
-              "voice": "{altitude} overcast {convective}"
-            },
-            "VV": {
-              "text": "VV{altitude}",
-              "voice": "indefinite ceiling {altitude}"
-            },
-            "NSC": {
-              "text": "NSC",
-              "voice": "no significant clouds"
+            "FEW": {
+              "text": "FEW{altitude}{convective}",
+              "voice": "few at {altitude} feet {convective}"
             },
             "NCD": {
               "text": "NCD",
               "voice": "no clouds detected"
             },
-            "CLR": {
-              "text": "CLR",
-              "voice": "sky clear below one-two thousand"
+            "NSC": {
+              "text": "NSC",
+              "voice": "no significant clouds"
+            },
+            "OVC": {
+              "text": "OVC{altitude}{convective}",
+              "voice": "overcast at {altitude} feet {convective}"
+            },
+            "SCT": {
+              "text": "SCT{altitude}{convective}",
+              "voice": "scattered at {altitude} feet {convective}"
             },
             "SKC": {
               "text": "SKC",
               "voice": "sky clear"
+            },
+            "CLR": {
+              "text": "CLR",
+              "voice": "sky clear below one-two thousand"
+            },
+            "VV": {
+              "text": "VV{altitude}",
+              "voice": "vertical visibility {altitude}"
             }
           },
           "convectiveTypes": {
@@ -6171,40 +6208,42 @@
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "{clouds}",
-            "voice": "{clouds}"
+            "text": "CLD {clouds}.",
+            "voice": "CLOUD IS {clouds}."
           }
         },
         "temperature": {
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "{temp}",
-            "voice": "TEMPERATURE {temp}"
+            "text": "TEMP {temp}C.",
+            "voice": "TEMPERATURE {temp} CENTIGRADE."
           }
         },
         "dewpoint": {
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "{dewpoint}",
-            "voice": "DEWPOINT {dewpoint}"
+            "text": "DEWPT {dewpoint}C.",
+            "voice": "DEWPOINT {dewpoint} CENTIGRADE."
           }
         },
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "QNH {altimeter} HPA",
-            "voice": "QUEUE ANN HAITCH {altimeter} hectopascals."
+            "text": "QNH {altimeter} MB/{altimeter|inhg} INHG, QFE {qfe|123} MB.",
+            "voice": "QUEUE ANN HAITCH {altimeter} MILLIBARS, {altimeter|inhg} INCHES. QFE {qfe|123} MILLIBARS."
           }
         },
         "trend": {
           "nosigText": "NOSIG",
-          "nosigVoice": "No Significant Changes",
+          "nosigVoice": "No Significant Change",
           "becomingText": "BECMG",
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
           "temporaryVoice": "Temporary",
+          "notAvailableText": "NIL",
+          "notAvailableVoice": "Nil",
           "template": {}
         },
         "windShear": {
@@ -6223,15 +6262,15 @@
         },
         "notams": {
           "template": {
-            "text": "{notams}",
-            "voice": "{notams}"
+            "text": "NOTAMS... {notams}",
+            "voice": "NOTICES TO AIR MISSIONS: {notams}"
           }
         },
         "closingStatement": {
-          "autoIncludeClosingStatement": false,
+          "autoIncludeClosingStatement": true,
           "template": {
-            "text": "...ADVS YOU HAVE INFO {letter}",
-            "voice": "ADVISE ON INITIAL CONTACT, YOU HAVE INFORMATION {letter|word}"
+            "text": "INFORM ATC ON INITIAL CTC YOU HAVE RCVD INFO {letter}.",
+            "voice": "INFORM ATC ON INITIAL CONTACT THAT YOU HAVE RECEIVED INFO {letter|word}."
           }
         }
       },
@@ -6242,26 +6281,23 @@
       "useDecimalTerminology": true,
       "atisVoice": {
         "useTextToSpeech": true,
-        "voice": "UK Female",
-        "speechRate": 180
+        "voice": "AU Female",
+        "speechRate": 150
       },
       "presets": [
         {
-          "id": "5cfdb7bb-663c-4929-af34-29ff00499786",
-          "name": "RWY 04",
-          "airportConditions": "EXP ILS APP. RWY 04 IN USE.",
-          "template": "[FACILITY] ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [FULL_WX_STRING]. [NOTAMS]. ACK INFO [ATIS_CODE] ON FIRST CTC WITH ATC.",
-          "externalGenerator": {
-            "enabled": false
-          }
-        },
-        {
           "id": "b04da2cc-2ce3-40ef-b52c-ba70818ab86f",
-          "name": "RWY 22",
-          "airportConditions": "EXP VIS APP. RWY 22 IN USE. DEP TFC EXP INTXN A. TORA 3600 METERS.",
-          "template": "BATAM HANG NADIM ATIS INFORMATION [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [FULL_WX_STRING]. [NOTAMS]. ACK INFO [ATIS_CODE] ON FIRST CTC WITH ATC.",
+          "name": "WIDD DEFAULT",
+          "airportConditions": "",
+          "template": "AWIDD [ATIS_CODE]. [ARPT_COND] [NOTAMS] [OBS_TIME] [SURFACE_WIND]. [PREVAILING_VISIBILITY]. [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] RMK: [TREND]. [NOTAMS] [CLOSING]",
           "externalGenerator": {
-            "enabled": false
+            "enabled": false,
+            "textUrl": "",
+            "voiceUrl": "",
+            "arrival": "",
+            "departure": "",
+            "approaches": "",
+            "remarks": ""
           }
         }
       ],
@@ -6277,12 +6313,48 @@
           "voice": "TOE RA"
         },
         {
-          "variableName": "A",
-          "text": "A",
-          "voice": "ALPHA"
+          "variableName": "INTXN_A",
+          "text": "INTXN A",
+          "voice": "INTERSECTION ALPHA"
+        },
+        {
+          "variableName": "ATIS",
+          "text": "ATIS",
+          "voice": "AUTOMATIC TERMINAL INFORMATION SERVICE"
+        },
+        {
+          "variableName": "AWIDD",
+          "text": "WIDD ATIS",
+          "voice": "THIS IS AN AUTOMATIC TERMINAL INFORMATION SERVICE FOR HANG NADIM AIRPORT, INFORMATION"
+        },
+        {
+          "variableName": "RMK",
+          "text": "RMK",
+          "voice": "REMARK"
+        },
+        {
+          "variableName": "ILS",
+          "text": "ILS",
+          "voice": "EYE ELL ASS"
+        },
+        {
+          "variableName": "RNP",
+          "text": "RNP",
+          "voice": "R ANN PEE"
         }
       ],
-      "airportConditionDefinitions": [],
+      "airportConditionDefinitions": [
+        {
+          "text": "EXP ILS APP. RWY IN USE IS 04.",
+          "ordinal": 1,
+          "enabled": false
+        },
+        {
+          "text": "EXP RNP APP. RWY IN USE IS 22, DEP TFC EXP INTXN_A. TORA *3600 METRES.",
+          "ordinal": 2,
+          "enabled": true
+        }
+      ],
       "notamDefinitions": []
     },
     {
@@ -6298,11 +6370,12 @@
       "atisFormat": {
         "observationTime": {
           "standardUpdateTime": [
-            0
+            0,
+            30
           ],
           "template": {
-            "text": "TIME {time}Z",
-            "voice": "TIME {time}"
+            "text": "TIME {time}Z.",
+            "voice": "TIME, {time}."
           }
         },
         "surfaceWind": {
@@ -6313,31 +6386,31 @@
           },
           "standard": {
             "template": {
-              "text": "WIND {wind_dir}{wind_spd}KT",
-              "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS"
+              "text": "WIND {wind_dir}/{wind_spd}KT",
+              "voice": "WIND, {wind_dir} DEGREES, {wind_spd} KNOTS."
             }
           },
           "standardGust": {
             "template": {
-              "text": "WIND {wind_dir}{wind_spd}G{wind_gust}KT",
-              "voice": "WIND {wind_dir} DEGREES {wind_spd} KNOTS, GUSTING {wind_gust}"
+              "text": "WIND {wind_dir}/{wind_spd}KT GUST {wind_gust}KT",
+              "voice": "WIND, {wind_dir} DEGREES, {wind_spd} KNOTS, GUSTING TO {wind_gust} KNOTS."
             }
           },
           "variable": {
             "template": {
-              "text": "VRB{wind_spd}KT",
-              "voice": "DIRECTION VARIABLE {wind_spd} KNOTS"
+              "text": "WIND VRB/{wind_spd}KT",
+              "voice": "WIND, DIRECTION VARIABLE, {wind_spd} KNOTS"
             }
           },
           "variableGust": {
             "template": {
-              "text": "VRB{wind_spd}G{wind_gust}KT",
-              "voice": "DIRECTION VARIABLE {wind_spd} KNOTS, GUSTING {wind_gust}"
+              "text": "WIND VRB/{wind_spd}KT GUST {wind_gust}KT",
+              "voice": "WIND, DIRECTION VARIABLE, {wind_spd} KNOTS, GUSTING TO {wind_gust} KNOTS."
             }
           },
           "variableDirection": {
             "template": {
-              "text": "VRB {wind_vmin}V{wind_vmax}",
+              "text": "VRB BTN {wind_vmin} AND {wind_vmax} DEG",
               "voice": "DIRECTION VARIABLE BETWEEN {wind_vmin} AND {wind_vmax} DEGREES"
             }
           },
@@ -6345,7 +6418,7 @@
             "calmWindSpeed": 0,
             "template": {
               "text": "WIND CALM",
-              "voice": "WIND CALM"
+              "voice": "WIND, CALM."
             }
           }
         },
@@ -6358,19 +6431,19 @@
           "southWest": "to the south-west",
           "west": "to the west",
           "northWest": "to the north-west",
-          "unlimitedVisibilityVoice": "visibility 10 kilometers",
+          "unlimitedVisibilityVoice": "visibility, 10 kilometers",
           "unlimitedVisibilityText": "VIS 10KM",
           "includeVisibilitySuffix": true,
           "metersCutoff": 5000,
           "template": {
             "text": "VIS {visibility}",
-            "voice": "VISIBILITY {visibility}"
+            "voice": "VISIBILITY, {visibility}"
           }
         },
         "runwayVisualRange": {
-          "neutralTendency": "Neutral",
-          "goingUpTendency": "Going Up",
-          "goingDownTendency": "Going Down",
+          "neutralTendency": "Metres.",
+          "goingUpTendency": "Metres Upward Tendancy.",
+          "goingDownTendency": "Metres Downward Tendancy.",
           "template": {}
         },
         "presentWeather": {
@@ -8105,18 +8178,18 @@
             }
           },
           "template": {
-            "text": "{weather}",
-            "voice": "{weather}"
+            "text": "{weather}.",
+            "voice": "{weather}."
           }
         },
         "recentWeather": {
           "template": {
-            "text": "RECENT WEATHER {weather}",
-            "voice": "RECENT WEATHER {weather}"
+            "text": "RECENT WEATHER {weather}.",
+            "voice": "RECENT WEATHER {weather}."
           }
         },
         "clouds": {
-          "identifyCeilingLayer": true,
+          "identifyCeilingLayer": false,
           "identifyCeilingLayerTextAtis": false,
           "textAtisCeilingPrefix": "CIG",
           "cloudCeilingLayerTypes": [
@@ -8135,24 +8208,24 @@
           },
           "types": {
             "FEW": {
-              "text": "FEW{altitude}",
-              "voice": "few {altitude}"
+              "text": "FEW {convective} {altitude:1}00FT",
+              "voice": "few {convective}, {altitude} feet"
             },
             "SCT": {
-              "text": "SCT{altitude}{convective}",
-              "voice": "{altitude} scattered {convective}"
+              "text": "SCT {convective} {altitude:1}00FT",
+              "voice": "scattered {convective}, {altitude} feet"
             },
             "BKN": {
-              "text": "BKN{altitude}{convective}",
-              "voice": "{altitude} broken {convective}"
+              "text": "BKN {convective} {altitude:1}00FT",
+              "voice": "broken {convective}, {altitude} feet"
             },
             "OVC": {
-              "text": "OVC{altitude}{convective}",
-              "voice": "{altitude} overcast {convective}"
+              "text": "OVC {convective} {altitude:1}00FT",
+              "voice": "overcast {convective}, {altitude} feet"
             },
             "VV": {
-              "text": "VV{altitude}",
-              "voice": "indefinite ceiling {altitude}"
+              "text": "VV {altitude:1}00FT",
+              "voice": "indefinite ceiling, {altitude} feet"
             },
             "NSC": {
               "text": "NSC",
@@ -8172,51 +8245,51 @@
             }
           },
           "convectiveTypes": {
-            "CB": "cumulonimbus",
+            "CB": "C-B",
             "TCU": "towering cumulus"
           },
           "template": {
-            "text": "CLOUD {clouds}",
-            "voice": "cloud {clouds}"
+            "text": "CLOUD {clouds}.",
+            "voice": "cloud, {clouds}."
           }
         },
         "temperature": {
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "TEMP {temp}",
-            "voice": "TEMPERATURE {temp}"
+            "text": "TEMP {temp}.",
+            "voice": "TEMPERATURE, {temp}."
           }
         },
         "dewpoint": {
           "usePlusPrefix": false,
           "speakLeadingZero": false,
           "template": {
-            "text": "DEWPOINT {dewpoint}",
-            "voice": "DEWPOINT {dewpoint}"
+            "text": "DEWPT {dewpoint}.",
+            "voice": "DEWPOINT, {dewpoint}."
           }
         },
         "altimeter": {
           "pronounceDecimal": false,
           "template": {
-            "text": "QNH {altimeter} HPA",
-            "voice": "QUEUE ANN HAITCH {altimeter} hectopascals."
+            "text": "QNH {altimeter} HPA.",
+            "voice": "QUEUE ANN HAITCH, {altimeter}, hectopascals."
           }
         },
         "trend": {
           "nosigText": "NOSIG",
-          "nosigVoice": "No Significant Changes",
+          "nosigVoice": "nosig",
           "becomingText": "BECMG",
           "becomingVoice": "Becoming",
           "temporaryText": "TEMPO",
-          "temporaryVoice": "Temporary",
+          "temporaryVoice": "Tempo",
           "template": {}
         },
         "windShear": {
-          "runwayText": "WS R{Runway}",
-          "runwayVoice": "Wind Shear Runway {Runway}",
-          "allRunwayText": "WS ALL RWY",
-          "allRunwayVoice": "Wind Shear All Runways",
+          "runwayText": "WS R{Runway}.",
+          "runwayVoice": "Wind Shear Warning, Wind Shear observed on approach to Runway {Runway}",
+          "allRunwayText": "WS ALL RWY.",
+          "allRunwayVoice": "Wind Shear Warning, Wind Shear observed in the vicinity of the aerodrome.",
           "template": {}
         },
         "transitionLevel": {
@@ -8241,8 +8314,8 @@
         "closingStatement": {
           "autoIncludeClosingStatement": false,
           "template": {
-            "text": "ACK INFO {letter} ON FIRST CTC WITH ATC.",
-            "voice": "ACKNOWLEDGE INFORMATION {letter/word} ON FIRST CONTACT WITH ATC."
+            "text": "ACK ATIS {letter}.",
+            "voice": "ACKNOWLEDGE AY TEES {letter|word}."
           }
         }
       },
@@ -8254,14 +8327,15 @@
       "atisVoice": {
         "useTextToSpeech": true,
         "voice": "UK Female",
-        "speechRate": 180
+        "speechRate": 150
       },
       "presets": [
         {
           "id": "0e284951-dc90-4726-aa72-41c890c32bfa",
           "name": "DEP CONFIG",
           "airportConditions": "",
-          "template": "SINGAPORE CHANGI APRT, DEP, INFO [ATIS_CODE]. [OBS_TIME]. [ARPT_COND]. [SURFACE_WIND]. [PREVAILING_VISIBILITY]. [CLOUDS]. [TEMP]. [DEW]. [PRESSURE]. DEP, INITIAL CLIMB {3000} FT. [NOTAMS]. ACK INFO [ATIS_CODE].",
+          "notams": "",
+          "template": "DWSSS INF [ATIS_CODE]. [OBS_TIME] [ARPT_COND] [NOTAMS] [SURFACE_WIND]. [PREVAILING_VISIBILITY]. [RVR] [PRESENT_WX] [CLOUDS] [TEMP] [DEW] [PRESSURE] [TREND]. [WS] C3000. [CLOSING]",
           "externalGenerator": {
             "enabled": false,
             "textUrl": "",
@@ -8283,11 +8357,6 @@
           "variableName": "SEG",
           "text": "SEG",
           "voice": "SEGREGATED"
-        },
-        {
-          "variableName": "TEMP",
-          "text": "TEMP",
-          "voice": "TEMPERATURE"
         },
         {
           "variableName": "HPA",
@@ -8353,126 +8422,146 @@
           "variableName": "UNBLE",
           "text": "UNBLE",
           "voice": "UNABLE"
+        },
+        {
+          "variableName": "DWSSS",
+          "text": "WSSS DEP",
+          "voice": "SINGAPORE CHANGI ARPT, DEPARTURE,"
+        },
+        {
+          "variableName": "INF",
+          "text": "ATIS",
+          "voice": "INFOR"
+        },
+        {
+          "variableName": "AATIS",
+          "text": "ATIS",
+          "voice": "AY TEES"
+        },
+        {
+          "variableName": "C3000",
+          "text": "DEPS, INITIAL CMB 3000 FT",
+          "voice": "DEPARTURES, INITIAL CLIMB {3000} FEET"
         }
       ],
       "airportConditionDefinitions": [
         {
-          "text": "DEP RWY 02L",
+          "text": "DEP RWY 02L.",
           "ordinal": 1,
           "enabled": false
         },
         {
-          "text": "DEP RWY 02C",
+          "text": "DEP RWY 02C.",
           "ordinal": 2,
-          "enabled": true
+          "enabled": false
         },
         {
-          "text": "DEP RWY 02R\r\n",
+          "text": "DEP RWY 02R.",
           "ordinal": 3,
           "enabled": false
         },
         {
-          "text": "DEP RWY 20R\r\n",
+          "text": "DEP RWY 20R.",
           "ordinal": 4,
           "enabled": false
         },
         {
-          "text": "DEP RWY 20C\r\n",
+          "text": "DEP RWY 20C.",
           "ordinal": 5,
-          "enabled": false
+          "enabled": true
         },
         {
-          "text": "DEP RWY 20L\r\n",
+          "text": "DEP RWY 20L.",
           "ordinal": 6,
           "enabled": false
         },
         {
-          "text": "DEP RWY 02L AND RWY 02C",
+          "text": "DEP RWY 02L, AND RWY 02C.",
           "ordinal": 7,
           "enabled": false
         },
         {
-          "text": "DEP RWY 02L AND RWY 02R",
+          "text": "DEP RWY 02L, AND RWY 02R.",
           "ordinal": 8,
           "enabled": false
         },
         {
-          "text": "DEP RWY 02C AND RWY 02R",
+          "text": "DEP RWY 02C, AND RWY 02R.",
           "ordinal": 9,
           "enabled": false
         },
         {
-          "text": "DEP RWY 20R AND RWY 20C",
+          "text": "DEP RWY 20R, AND RWY 20C.",
           "ordinal": 10,
           "enabled": false
         },
         {
-          "text": "DEP RWY 20C AND RWY 20L",
+          "text": "DEP RWY 20C, AND RWY 20L.",
           "ordinal": 11,
           "enabled": false
         },
         {
-          "text": "DEP RWY 20R AND RWY 20L",
+          "text": "DEP RWY 20R, AND RWY 20L.",
           "ordinal": 12,
           "enabled": false
         },
         {
-          "text": "RWY 02L ^20R CLOSED",
+          "text": "RWY 02L ^20R CLOSED.",
           "ordinal": 13,
           "enabled": false
         },
         {
-          "text": "RWY 02C ^20C CLOSED",
+          "text": "RWY 02C ^20C CLOSED.",
           "ordinal": 14,
           "enabled": false
         },
         {
-          "text": "RWY 02R ^20L CLOSED",
+          "text": "RWY 02R ^20L CLOSED.",
           "ordinal": 15,
           "enabled": false
         },
         {
-          "text": "RWY 20R ^02L CLOSED",
+          "text": "RWY 20R ^02L CLOSED.",
           "ordinal": 16,
           "enabled": false
         },
         {
-          "text": "RWY 20C ^02C CLOSED",
+          "text": "RWY 20C ^02C CLOSED.",
           "ordinal": 17,
           "enabled": false
         },
         {
-          "text": "RWY 20L ^02R CLOSED",
+          "text": "RWY 20L ^02R CLOSED.",
           "ordinal": 18,
           "enabled": false
         },
         {
-          "text": "RWY 02C ^20C AND RWY 02R ^20L CLOSED",
+          "text": "RWY 02C ^20C, AND RWY 02R ^20L CLOSED.",
           "ordinal": 19,
           "enabled": false
         },
         {
-          "text": "RWY 02L ^20R AND RWY 02R ^20L CLOSED",
+          "text": "RWY 02L ^20R, AND RWY 02R ^20L CLOSED.",
           "ordinal": 20,
           "enabled": false
         },
         {
-          "text": "RWY 02L ^20R AND RWY 02C ^20C CLOSED\r\n",
+          "text": "RWY 02L ^20R, AND RWY 02C ^20C CLOSED.",
           "ordinal": 21,
           "enabled": false
         },
         {
-          "text": "RWY 20C ^02C AND RWY 20L ^02R CLOSED\r\n",
+          "text": "RWY 20C ^02C, AND RWY 20L ^02R CLOSED.",
           "ordinal": 22,
           "enabled": false
         },
         {
-          "text": "RWY 20R ^02L AND RWY 20L ^02R CLOSED\r\n",
+          "text": "RWY 20R ^02L, AND RWY 20L ^02R CLOSED.",
           "ordinal": 23,
           "enabled": false
         },
         {
-          "text": "RWY 20R ^02L AND RWY 20C ^02C CLOSED\r\n",
+          "text": "RWY 20R ^02L, AND RWY 20C ^02C CLOSED.",
           "ordinal": 24,
           "enabled": false
         },
@@ -8494,28 +8583,23 @@
           "enabled": true
         },
         {
-          "text": "TWY DESIGNATIONS MAY NOT BE ACCURATE ON SCENERY. REFER TO CHARTS.",
+          "text": "TWY DESIGNATIONS MAY NOT BE ACCURATE ON SCENERY, REFER TO CHARTS.",
           "ordinal": 2,
           "enabled": true
         },
         {
-          "text": "NEW SID EFF AIRAC 2403.",
+          "text": "ADVS ATC IF UNBLE DEP ON RWY 02C.",
           "ordinal": 3,
           "enabled": false
         },
         {
-          "text": "ADVS ATC IF UNBLE DEP ON RWY 02C.",
+          "text": "ADVS ATC IF UNBLE DEP ON RWY 20C.",
           "ordinal": 4,
           "enabled": false
         },
         {
-          "text": "ADVS ATC IF UNBLE DEP ON RWY 20C.",
-          "ordinal": 5,
-          "enabled": false
-        },
-        {
           "text": "VFR TFC CONDUCTING VIS CCTS IN THE VCNTY OF CHANGI AD.",
-          "ordinal": 6,
+          "ordinal": 5,
           "enabled": false
         }
       ]
