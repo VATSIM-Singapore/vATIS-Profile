@@ -4389,519 +4389,519 @@
           "presentWeatherTypes": {
             "-DS": {
               "text": "-DS",
-              "spoken": "Feeble Duststorm"
+              "spoken": "Light Duststorm"
             },
             "-DZ": {
               "text": "-DZ",
-              "spoken": "Feeble Drizzle"
+              "spoken": "Light Drizzle"
             },
             "-DZPL": {
               "text": "-DZPL",
-              "spoken": "Feeble Drizzle And Ice Pellets"
+              "spoken": "Light Drizzle And Ice Pellets"
             },
             "-DZPLRA": {
               "text": "-DZPLRA",
-              "spoken": "Feeble Drizzle, Ice Pellets And Rain"
+              "spoken": "Light Drizzle, Ice Pellets And Rain"
             },
             "-DZRA": {
               "text": "-DZRA",
-              "spoken": "Feeble Drizzle And Rain"
+              "spoken": "Light Drizzle And Rain"
             },
             "-DZRAPL": {
               "text": "-DZRAPL",
-              "spoken": "Feeble Drizzle, Rain And Ice Pellets"
+              "spoken": "Light Drizzle, Rain And Ice Pellets"
             },
             "-DZRASG": {
               "text": "-DZRASG",
-              "spoken": "Feeble Drizzle, Rain And Snow Grains"
+              "spoken": "Light Drizzle, Rain And Snow Grains"
             },
             "-DZRASN": {
               "text": "-DZRASN",
-              "spoken": "Feeble Drizzle, Rain And Snow"
+              "spoken": "Light Drizzle, Rain And Snow"
             },
             "-DZSG": {
               "text": "-DZSG",
-              "spoken": "Feeble Drizzle And Snow Grains"
+              "spoken": "Light Drizzle And Snow Grains"
             },
             "-DZSGRA": {
               "text": "-DZSGRA",
-              "spoken": "Feeble Drizzle, Snow Grains And Rain"
+              "spoken": "Light Drizzle, Snow Grains And Rain"
             },
             "-DZSN": {
               "text": "-DZSN",
-              "spoken": "Feeble Drizzle And Snow"
+              "spoken": "Light Drizzle And Snow"
             },
             "-DZSNRA": {
               "text": "-DZSNRA",
-              "spoken": "Feeble Drizzle, Snow And Rain"
+              "spoken": "Light Drizzle, Snow And Rain"
             },
             "-FZDZ": {
               "text": "-FZDZ",
-              "spoken": "Feeble Freezing Drizzle"
+              "spoken": "Light Freezing Drizzle"
             },
             "-FZDZPL": {
               "text": "-FZDZPL",
-              "spoken": "Feeble Freezing Drizzle And Ice Pellets"
+              "spoken": "Light Freezing Drizzle And Ice Pellets"
             },
             "-FZDZRA": {
               "text": "-FZDZRA",
-              "spoken": "Feeble Freezing Drizzle And Rain"
+              "spoken": "Light Freezing Drizzle And Rain"
             },
             "-FZDZSG": {
               "text": "-FZDZSG",
-              "spoken": "Feeble Freezing Drizzle And Snow Grains"
+              "spoken": "Light Freezing Drizzle And Snow Grains"
             },
             "-FZDZSN": {
               "text": "-FZDZSN",
-              "spoken": "Feeble Freezing Drizzle And Snow"
+              "spoken": "Light Freezing Drizzle And Snow"
             },
             "-FZRA": {
               "text": "-FZRA",
-              "spoken": "Feeble Freezing Rain"
+              "spoken": "Light Freezing Rain"
             },
             "-FZRADZ": {
               "text": "-FZRADZ",
-              "spoken": "Feeble Freezing Rain And Drizzle"
+              "spoken": "Light Freezing Rain And Drizzle"
             },
             "-FZRAPL": {
               "text": "-FZRAPL",
-              "spoken": "Feeble Freezing Rain And Ice Pellets"
+              "spoken": "Light Freezing Rain And Ice Pellets"
             },
             "-FZRASG": {
               "text": "-FZRASG",
-              "spoken": "Feeble Freezing Rain And Snow Grains"
+              "spoken": "Light Freezing Rain And Snow Grains"
             },
             "-FZRASN": {
               "text": "-FZRASN",
-              "spoken": "Feeble Freezing Rain And Snow"
+              "spoken": "Light Freezing Rain And Snow"
             },
             "-FZUP": {
               "text": "-FZUP",
-              "spoken": "Feeble Unidentified Freezing Precipitation"
+              "spoken": "Light Unidentified Freezing Precipitation"
             },
             "-PL": {
               "text": "-PL",
-              "spoken": "Feeble Ice Pellets"
+              "spoken": "Light Ice Pellets"
             },
             "-PLDZ": {
               "text": "-PLDZ",
-              "spoken": "Feeble Ice Pellets And Drizzle"
+              "spoken": "Light Ice Pellets And Drizzle"
             },
             "-PLDZRA": {
               "text": "-PLDZRA",
-              "spoken": "Feeble Ice Pellets, Drizzle And Rain"
+              "spoken": "Light Ice Pellets, Drizzle And Rain"
             },
             "-PLRA": {
               "text": "-PLRA",
-              "spoken": "Feeble Ice Pellets And Rain"
+              "spoken": "Light Ice Pellets And Rain"
             },
             "-PLRADZ": {
               "text": "-PLRADZ",
-              "spoken": "Feeble Ice Pellets, Rain And Drizzle"
+              "spoken": "Light Ice Pellets, Rain And Drizzle"
             },
             "-PLRASN": {
               "text": "-PLRASN",
-              "spoken": "Feeble Ice Pellets, Rain And Snow"
+              "spoken": "Light Ice Pellets, Rain And Snow"
             },
             "-PLSG": {
               "text": "-PLSG",
-              "spoken": "Feeble Ice Pellets And Snow Grains"
+              "spoken": "Light Ice Pellets And Snow Grains"
             },
             "-PLSGSN": {
               "text": "-PLSGSN",
-              "spoken": "Feeble Ice Pellets, Snow Grains And Snow"
+              "spoken": "Light Ice Pellets, Snow Grains And Snow"
             },
             "-PLSN": {
               "text": "-PLSN",
-              "spoken": "Feeble Ice Pellets And Snow"
+              "spoken": "Light Ice Pellets And Snow"
             },
             "-PLSNRA": {
               "text": "-PLSNRA",
-              "spoken": "Feeble Ice Pellets, Snow And Rain"
+              "spoken": "Light Ice Pellets, Snow And Rain"
             },
             "-PLSNSG": {
               "text": "-PLSNSG",
-              "spoken": "Feeble Ice Pellets, Snow And Snow Grains"
+              "spoken": "Light Ice Pellets, Snow And Snow Grains"
             },
             "-RA": {
               "text": "-RA",
-              "spoken": "Feeble Rain"
+              "spoken": "Light Rain"
             },
             "-RADZ": {
               "text": "-RADZ",
-              "spoken": "Feeble Rain And Drizzle"
+              "spoken": "Light Rain And Drizzle"
             },
             "-RADZPL": {
               "text": "-RADZPL",
-              "spoken": "Feeble Rain, Drizzle And Ice Pellets"
+              "spoken": "Light Rain, Drizzle And Ice Pellets"
             },
             "-RADZSG": {
               "text": "-RADZSG",
-              "spoken": "Feeble Rain, Drizzle And Snow Grains"
+              "spoken": "Light Rain, Drizzle And Snow Grains"
             },
             "-RADZSN": {
               "text": "-RADZSN",
-              "spoken": "Feeble Rain, Drizzle And Snow"
+              "spoken": "Light Rain, Drizzle And Snow"
             },
             "-RAPL": {
               "text": "-RAPL",
-              "spoken": "Feeble Rain And Ice Pellets"
+              "spoken": "Light Rain And Ice Pellets"
             },
             "-RAPLDZ": {
               "text": "-RAPLDZ",
-              "spoken": "Feeble Rain, Ice Pellets And Drizzle"
+              "spoken": "Light Rain, Ice Pellets And Drizzle"
             },
             "-RAPLSN": {
               "text": "-RAPLSN",
-              "spoken": "Feeble Rain, Ice Pellets And Snow"
+              "spoken": "Light Rain, Ice Pellets And Snow"
             },
             "-RASG": {
               "text": "-RASG",
-              "spoken": "Feeble Rain And Snow Grains"
+              "spoken": "Light Rain And Snow Grains"
             },
             "-RASGDZ": {
               "text": "-RASGDZ",
-              "spoken": "Feeble Rain, Snow Grains And Drizzle"
+              "spoken": "Light Rain, Snow Grains And Drizzle"
             },
             "-RASGSN": {
               "text": "-RASGSN",
-              "spoken": "Feeble Rain, Snow Grains And Snow"
+              "spoken": "Light Rain, Snow Grains And Snow"
             },
             "-RASN": {
               "text": "-RASN",
-              "spoken": "Feeble Rain And Snow"
+              "spoken": "Light Rain And Snow"
             },
             "-RASNDZ": {
               "text": "-RASNDZ",
-              "spoken": "Feeble Rain, Snow And Drizzle"
+              "spoken": "Light Rain, Snow And Drizzle"
             },
             "-RASNPL": {
               "text": "-RASNPL",
-              "spoken": "Feeble Rain, Snow And Ice Pellets"
+              "spoken": "Light Rain, Snow And Ice Pellets"
             },
             "-RASNSG": {
               "text": "-RASNSG",
-              "spoken": "Feeble Rain, Snow And Snow Grains"
+              "spoken": "Light Rain, Snow And Snow Grains"
             },
             "-SG": {
               "text": "-SG",
-              "spoken": "Feeble Snow Grains"
+              "spoken": "Light Snow Grains"
             },
             "-SGDZ": {
               "text": "-SGDZ",
-              "spoken": "Feeble Snow Grains And Drizzle"
+              "spoken": "Light Snow Grains And Drizzle"
             },
             "-SGDZRA": {
               "text": "-SGDZRA",
-              "spoken": "Feeble Snow Grains, Drizzle And Rain"
+              "spoken": "Light Snow Grains, Drizzle And Rain"
             },
             "-SGPL": {
               "text": "-SGPL",
-              "spoken": "Feeble Snow Grains And Ice Pellets"
+              "spoken": "Light Snow Grains And Ice Pellets"
             },
             "-SGPLSN": {
               "text": "-SGPLSN",
-              "spoken": "Feeble Snow Grains, Ice Pellets And Snow"
+              "spoken": "Light Snow Grains, Ice Pellets And Snow"
             },
             "-SGRA": {
               "text": "-SGRA",
-              "spoken": "Feeble Snow Grains And Rain"
+              "spoken": "Light Snow Grains And Rain"
             },
             "-SGRADZ": {
               "text": "-SGRADZ",
-              "spoken": "Feeble Snow Grains, Rain And Drizzle"
+              "spoken": "Light Snow Grains, Rain And Drizzle"
             },
             "-SGRASN": {
               "text": "-SGRASN",
-              "spoken": "Feeble Snow Grains, Rain And Snow"
+              "spoken": "Light Snow Grains, Rain And Snow"
             },
             "-SGSN": {
               "text": "-SGSN",
-              "spoken": "Feeble Snow Grains And Snow"
+              "spoken": "Light Snow Grains And Snow"
             },
             "-SGSNPL": {
               "text": "-SGSNPL",
-              "spoken": "Feeble Snow Grains, Snow And Ice Pellets"
+              "spoken": "Light Snow Grains, Snow And Ice Pellets"
             },
             "-SGSNRA": {
               "text": "-SGSNRA",
-              "spoken": "Feeble Snow Grains, Snow And Rain"
+              "spoken": "Light Snow Grains, Snow And Rain"
             },
             "-SHGR": {
               "text": "-SHGR",
-              "spoken": "Feeble Showers Of Hail"
+              "spoken": "Light Showers Of Hail"
             },
             "-SHGRRA": {
               "text": "-SHGRRA",
-              "spoken": "Feeble Showers Of Hail And Rain"
+              "spoken": "Light Showers Of Hail And Rain"
             },
             "-SHGRRASN": {
               "text": "-SHGRRASN",
-              "spoken": "Feeble Showers Of Hail, Rain And Snow"
+              "spoken": "Light Showers Of Hail, Rain And Snow"
             },
             "-SHGRSN": {
               "text": "-SHGRSN",
-              "spoken": "Feeble Showers Of Hail And Snow"
+              "spoken": "Light Showers Of Hail And Snow"
             },
             "-SHGRSNRA": {
               "text": "-SHGRSNRA",
-              "spoken": "Feeble Showers Of Hail, Snow And Rain"
+              "spoken": "Light Showers Of Hail, Snow And Rain"
             },
             "-SHGS": {
               "text": "-SHGS",
-              "spoken": "Feeble Showers Of Snow Pellets"
+              "spoken": "Light Showers Of Snow Pellets"
             },
             "-SHGSRA": {
               "text": "-SHGSRA",
-              "spoken": "Feeble Showers Of Snow Pellets And Rain"
+              "spoken": "Light Showers Of Snow Pellets And Rain"
             },
             "-SHGSRASN": {
               "text": "-SHGSRASN",
-              "spoken": "Feeble Showers Of Snow Pellets, Rain And Snow"
+              "spoken": "Light Showers Of Snow Pellets, Rain And Snow"
             },
             "-SHGSSN": {
               "text": "-SHGSSN",
-              "spoken": "Feeble Showers Of Snow Pellets And Snow"
+              "spoken": "Light Showers Of Snow Pellets And Snow"
             },
             "-SHGSSNRA": {
               "text": "-SHGSSNRA",
-              "spoken": "Feeble Showers Of Snow Pellets, Snow And Rain"
+              "spoken": "Light Showers Of Snow Pellets, Snow And Rain"
             },
             "-SHRA": {
               "text": "-SHRA",
-              "spoken": "Feeble Showers Of Rain"
+              "spoken": "Light Showers Of Rain"
             },
             "-SHRAGR": {
               "text": "-SHRAGR",
-              "spoken": "Feeble Showers Of Rain And Hail"
+              "spoken": "Light Showers Of Rain And Hail"
             },
             "-SHRAGRSN": {
               "text": "-SHRAGRSN",
-              "spoken": "Feeble Showers Of Rain, Hail And Snow"
+              "spoken": "Light Showers Of Rain, Hail And Snow"
             },
             "-SHRAGS": {
               "text": "-SHRAGS",
-              "spoken": "Feeble Showers Of Rain And Snow Pellets"
+              "spoken": "Light Showers Of Rain And Snow Pellets"
             },
             "-SHRAGSSN": {
               "text": "-SHRAGSSN",
-              "spoken": "Feeble Showers Of Rain, Snow Pellets And Snow"
+              "spoken": "Light Showers Of Rain, Snow Pellets And Snow"
             },
             "-SHRASN": {
               "text": "-SHRASN",
-              "spoken": "Feeble Showers Of Rain And Snow"
+              "spoken": "Light Showers Of Rain And Snow"
             },
             "-SHRASNGR": {
               "text": "-SHRASNGR",
-              "spoken": "Feeble Showers Of Rain, Snow And Hail"
+              "spoken": "Light Showers Of Rain, Snow And Hail"
             },
             "-SHRASNGS": {
               "text": "-SHRASNGS",
-              "spoken": "Feeble Showers Of Rain, Snow And Snow Pellets"
+              "spoken": "Light Showers Of Rain, Snow And Snow Pellets"
             },
             "-SHSN": {
               "text": "-SHSN",
-              "spoken": "Feeble Showers Of Snow"
+              "spoken": "Light Showers Of Snow"
             },
             "-SHSNGR": {
               "text": "-SHSNGR",
-              "spoken": "Feeble Showers Of Snow And Hail"
+              "spoken": "Light Showers Of Snow And Hail"
             },
             "-SHSNGRRA": {
               "text": "-SHSNGRRA",
-              "spoken": "Feeble Showers Of Snow, Hail And Rain"
+              "spoken": "Light Showers Of Snow, Hail And Rain"
             },
             "-SHSNGS": {
               "text": "-SHSNGS",
-              "spoken": "Feeble Showers Of Snow And Snow Pellets"
+              "spoken": "Light Showers Of Snow And Snow Pellets"
             },
             "-SHSNGSRA": {
               "text": "-SHSNGSRA",
-              "spoken": "Feeble Showers Of Snow, Snow Pellets And Rain"
+              "spoken": "Light Showers Of Snow, Snow Pellets And Rain"
             },
             "-SHSNRA": {
               "text": "-SHSNRA",
-              "spoken": "Feeble Showers Of Snow And Rain"
+              "spoken": "Light Showers Of Snow And Rain"
             },
             "-SHSNRAGR": {
               "text": "-SHSNRAGR",
-              "spoken": "Feeble Showers Of Snow, Rain And Hail"
+              "spoken": "Light Showers Of Snow, Rain And Hail"
             },
             "-SHSNRAGS": {
               "text": "-SHSNRAGS",
-              "spoken": "Feeble Showers Of Snow, Rain And Snow Pellets"
+              "spoken": "Light Showers Of Snow, Rain And Snow Pellets"
             },
             "-SHUP": {
               "text": "-SHUP",
-              "spoken": "Feeble Unidentified Showers Of Precipitation"
+              "spoken": "Light Unidentified Showers Of Precipitation"
             },
             "-SN": {
               "text": "-SN",
-              "spoken": "Feeble Snow"
+              "spoken": "Light Snow"
             },
             "-SNDZ": {
               "text": "-SNDZ",
-              "spoken": "Feeble Snow And Drizzle"
+              "spoken": "Light Snow And Drizzle"
             },
             "-SNDZRA": {
               "text": "-SNDZRA",
-              "spoken": "Feeble Snow, Drizzle And Rain"
+              "spoken": "Light Snow, Drizzle And Rain"
             },
             "-SNPL": {
               "text": "-SNPL",
-              "spoken": "Feeble Snow And Ice Pellets"
+              "spoken": "Light Snow And Ice Pellets"
             },
             "-SNPLRA": {
               "text": "-SNPLRA",
-              "spoken": "Feeble Snow, Ice Pellets And Rain"
+              "spoken": "Light Snow, Ice Pellets And Rain"
             },
             "-SNPLSG": {
               "text": "-SNPLSG",
-              "spoken": "Feeble Snow, Ice Pellets And Snow Grains"
+              "spoken": "Light Snow, Ice Pellets And Snow Grains"
             },
             "-SNRA": {
               "text": "-SNRA",
-              "spoken": "Feeble Snow And Rain"
+              "spoken": "Light Snow And Rain"
             },
             "-SNRADZ": {
               "text": "-SNRADZ",
-              "spoken": "Feeble Snow, Rain And Drizzle"
+              "spoken": "Light Snow, Rain And Drizzle"
             },
             "-SNRAPL": {
               "text": "-SNRAPL",
-              "spoken": "Feeble Snow, Rain And Ice Pellets"
+              "spoken": "Light Snow, Rain And Ice Pellets"
             },
             "-SNRASG": {
               "text": "-SNRASG",
-              "spoken": "Feeble Snow, Rain And Snow Grains"
+              "spoken": "Light Snow, Rain And Snow Grains"
             },
             "-SNSG": {
               "text": "-SNSG",
-              "spoken": "Feeble Snow And Snow Grains"
+              "spoken": "Light Snow And Snow Grains"
             },
             "-SNSGPL": {
               "text": "-SNSGPL",
-              "spoken": "Feeble Snow, Snow Grains And Ice Pellets"
+              "spoken": "Light Snow, Snow Grains And Ice Pellets"
             },
             "-SNSGRA": {
               "text": "-SNSGRA",
-              "spoken": "Feeble Snow, Snow Grains And Rain"
+              "spoken": "Light Snow, Snow Grains And Rain"
             },
             "-SS": {
               "text": "-SS",
-              "spoken": "Feeble Sandstorm"
+              "spoken": "Light Sandstorm"
             },
             "-TSGR": {
               "text": "-TSGR",
-              "spoken": "Thunderstorm With Feeble Hail"
+              "spoken": "Thunderstorm With Light Hail"
             },
             "-TSGRRA": {
               "text": "-TSGRRA",
-              "spoken": "Thunderstorm With Feeble Hail And Rain"
+              "spoken": "Thunderstorm With Light Hail And Rain"
             },
             "-TSGRRASN": {
               "text": "-TSGRRASN",
-              "spoken": "Thunderstorm With Feeble Hail, Rain And Snow"
+              "spoken": "Thunderstorm With Light Hail, Rain And Snow"
             },
             "-TSGRSN": {
               "text": "-TSGRSN",
-              "spoken": "Thunderstorm With Feeble Hail And Snow"
+              "spoken": "Thunderstorm With Light Hail And Snow"
             },
             "-TSGRSNRA": {
               "text": "-TSGRSNRA",
-              "spoken": "Thunderstorm With Feeble Hail, Snow And Rain"
+              "spoken": "Thunderstorm With Light Hail, Snow And Rain"
             },
             "-TSGS": {
               "text": "-TSGS",
-              "spoken": "Thunderstorm With Feeble Snow Pellets"
+              "spoken": "Thunderstorm With Light Snow Pellets"
             },
             "-TSGSRA": {
               "text": "-TSGSRA",
-              "spoken": "Thunderstorm With Feeble Snow Pellets And Rain"
+              "spoken": "Thunderstorm With Light Snow Pellets And Rain"
             },
             "-TSGSRASN": {
               "text": "-TSGSRASN",
-              "spoken": "Thunderstorm With Feeble Snow Pellets, Rain And Snow"
+              "spoken": "Thunderstorm With Light Snow Pellets, Rain And Snow"
             },
             "-TSGSSN": {
               "text": "-TSGSSN",
-              "spoken": "Thunderstorm With Feeble Snow Pellets And Snow"
+              "spoken": "Thunderstorm With Light Snow Pellets And Snow"
             },
             "-TSGSSNRA": {
               "text": "-TSGSSNRA",
-              "spoken": "Thunderstorm With Feeble Snow Pellets, Snow And Rain"
+              "spoken": "Thunderstorm With Light Snow Pellets, Snow And Rain"
             },
             "-TSRA": {
               "text": "-TSRA",
-              "spoken": "Thunderstorm With Feeble Rain"
+              "spoken": "Thunderstorm With Light Rain"
             },
             "-TSRAGR": {
               "text": "-TSRAGR",
-              "spoken": "Thunderstorm With Feeble Rain And Hail"
+              "spoken": "Thunderstorm With Light Rain And Hail"
             },
             "-TSRAGRSN": {
               "text": "-TSRAGRSN",
-              "spoken": "Thunderstorm With Feeble Rain, Hail And Snow"
+              "spoken": "Thunderstorm With Light Rain, Hail And Snow"
             },
             "-TSRAGS": {
               "text": "-TSRAGS",
-              "spoken": "Thunderstorm With Feeble Rain And Snow Pellets"
+              "spoken": "Thunderstorm With Light Rain And Snow Pellets"
             },
             "-TSRAGSSN": {
               "text": "-TSRAGSSN",
-              "spoken": "Thunderstorm With Feeble Rain, Snow Pellets And Snow"
+              "spoken": "Thunderstorm With Light Rain, Snow Pellets And Snow"
             },
             "-TSRASN": {
               "text": "-TSRASN",
-              "spoken": "Thunderstorm With Feeble Rain And Snow"
+              "spoken": "Thunderstorm With Light Rain And Snow"
             },
             "-TSRASNGR": {
               "text": "-TSRASNGR",
-              "spoken": "Thunderstorm With Feeble Rain, Snow And Hail"
+              "spoken": "Thunderstorm With Light Rain, Snow And Hail"
             },
             "-TSRASNGS": {
               "text": "-TSRASNGS",
-              "spoken": "Thunderstorm With Feeble Rain, Snow And Snow Pellets"
+              "spoken": "Thunderstorm With Light Rain, Snow And Snow Pellets"
             },
             "-TSSN": {
               "text": "-TSSN",
-              "spoken": "Thunderstorm With Feeble Snow"
+              "spoken": "Thunderstorm With Light Snow"
             },
             "-TSSNGR": {
               "text": "-TSSNGR",
-              "spoken": "Thunderstorm With Feeble Snow And Hail"
+              "spoken": "Thunderstorm With Light Snow And Hail"
             },
             "-TSSNGRRA": {
               "text": "-TSSNGRRA",
-              "spoken": "Thunderstorm With Feeble Snow, Hail And Rain"
+              "spoken": "Thunderstorm With Light Snow, Hail And Rain"
             },
             "-TSSNGS": {
               "text": "-TSSNGS",
-              "spoken": "Thunderstorm With Feeble Snow And Snow Pellets"
+              "spoken": "Thunderstorm With Light Snow And Snow Pellets"
             },
             "-TSSNGSRA": {
               "text": "-TSSNGSRA",
-              "spoken": "Thunderstorm With Feeble Snow, Snow Pellets And Rain"
+              "spoken": "Thunderstorm With Light Snow, Snow Pellets And Rain"
             },
             "-TSSNRA": {
               "text": "-TSSNRA",
-              "spoken": "Thunderstorm With Feeble Snow And Rain"
+              "spoken": "Thunderstorm With Light Snow And Rain"
             },
             "-TSSNRAGR": {
               "text": "-TSSNRAGR",
-              "spoken": "Thunderstorm With Feeble Snow, Rain And Hail"
+              "spoken": "Thunderstorm With Light Snow, Rain And Hail"
             },
             "-TSSNRAGS": {
               "text": "-TSSNRAGS",
-              "spoken": "Thunderstorm With Feeble Snow, Rain And Snow Pellets"
+              "spoken": "Thunderstorm With Light Snow, Rain And Snow Pellets"
             },
             "-TSUP": {
               "text": "-TSUP",
-              "spoken": "Thunderstorm With Feeble Unidentified Precipitation"
+              "spoken": "Thunderstorm With Light Unidentified Precipitation"
             },
             "-UP": {
               "text": "-UP",
-              "spoken": "Feeble Unidentified Precipitation"
+              "spoken": "Light Unidentified Precipitation"
             },
             "+DS": {
               "text": "+DS",
