@@ -2,7 +2,7 @@
   "name": "Singapore",
   "id": "92fa6917-8158-456f-b84b-68bc1a91f15c",
   "updateUrl": "https://raw.githubusercontent.com/VATSIM-Singapore/vATIS-Profile/refs/heads/main/vATIS%20Profile%20-%20Singapore.json",
-  "updateSerial": 2025080100,
+  "updateSerial": 2026100100,
   "stations": [
     {
       "id": "a8df3f38-5809-4954-b033-1f0026a5cf5e",
@@ -2168,64 +2168,44 @@
           "enabled": false
         },
         {
-          "text": "RWY 02L ^20R CLOSED.",
+          "text": "RWY 02L/^20R CLOSED.",
           "ordinal": 15,
           "enabled": false
         },
         {
-          "text": "RWY 02C ^20C CLOSED.",
+          "text": "RWY 02C/^20C CLOSED.",
           "ordinal": 16,
           "enabled": false
         },
         {
-          "text": "RWY 02R ^20L CLOSED.",
+          "text": "RWY 02R/^20L CLOSED.",
           "ordinal": 17,
           "enabled": false
         },
         {
-          "text": "RWY 20R ^02L CLOSED.",
+          "text": "RWY 03/^21 CLOSED.",
           "ordinal": 18,
           "enabled": false
         },
         {
-          "text": "RWY 20C ^02C CLOSED.",
+          "text": "RWY 20R/^02L CLOSED.",
           "ordinal": 19,
           "enabled": false
         },
         {
-          "text": "RWY 20L ^02R CLOSED.",
+          "text": "RWY 20C/^02C CLOSED.",
           "ordinal": 20,
           "enabled": false
         },
         {
-          "text": "RWY 02C ^20C, AND RWY 02R ^20L CLOSED.",
+          "text": "RWY 20L/^02R CLOSED.",
           "ordinal": 21,
           "enabled": false
         },
         {
-          "text": "RWY 02L ^20R, AND RWY 02R ^20L CLOSED.",
+          "text": "RWY 21/^03 CLOSED.",
           "ordinal": 22,
-          "enabled": false
-        },
-        {
-          "text": "RWY 02L ^20R, AND RWY 02C ^20C CLOSED.",
-          "ordinal": 23,
-          "enabled": false
-        },
-        {
-          "text": "RWY 20C ^02C, AND RWY 20L ^02R CLOSED.",
-          "ordinal": 24,
-          "enabled": false
-        },
-        {
-          "text": "RWY 20R ^02L, AND RWY 20L ^02R CLOSED.",
-          "ordinal": 25,
-          "enabled": false
-        },
-        {
-          "text": "RWY 20R ^02L, AND RWY 20C ^02C CLOSED.",
-          "ordinal": 26,
-          "enabled": false
+          "enabled": true
         }
       ],
       "notamDefinitions": [
@@ -8506,73 +8486,53 @@
           "enabled": false
         },
         {
-          "text": "RWY 02L ^20R CLOSED.",
+          "text": "RWY 02L/^20R CLOSED.",
           "ordinal": 13,
           "enabled": false
         },
         {
-          "text": "RWY 02C ^20C CLOSED.",
+          "text": "RWY 02C/^20C CLOSED.",
           "ordinal": 14,
           "enabled": false
         },
         {
-          "text": "RWY 02R ^20L CLOSED.",
+          "text": "RWY 02R/^20L CLOSED.",
           "ordinal": 15,
           "enabled": false
         },
         {
-          "text": "RWY 20R ^02L CLOSED.",
+          "text": "RWY 03/^21 CLOSED.",
           "ordinal": 16,
           "enabled": false
         },
         {
-          "text": "RWY 20C ^02C CLOSED.",
+          "text": "RWY 20R/^02L CLOSED.",
           "ordinal": 17,
           "enabled": false
         },
         {
-          "text": "RWY 20L ^02R CLOSED.",
+          "text": "RWY 20C/^02C CLOSED.",
           "ordinal": 18,
           "enabled": false
         },
         {
-          "text": "RWY 02C ^20C, AND RWY 02R ^20L CLOSED.",
+          "text": "RWY 20L/^02R CLOSED.",
           "ordinal": 19,
           "enabled": false
         },
         {
-          "text": "RWY 02L ^20R, AND RWY 02R ^20L CLOSED.",
+          "text": "RWY 21/^03 CLOSED.",
           "ordinal": 20,
-          "enabled": false
+          "enabled": true
         },
         {
-          "text": "RWY 02L ^20R, AND RWY 02C ^20C CLOSED.",
+          "text": "EXP RWY 02R. IF UNABLE DUE SCENERY, INFORM ATC.",
           "ordinal": 21,
           "enabled": false
         },
         {
-          "text": "RWY 20C ^02C, AND RWY 20L ^02R CLOSED.",
-          "ordinal": 22,
-          "enabled": false
-        },
-        {
-          "text": "RWY 20R ^02L, AND RWY 20L ^02R CLOSED.",
-          "ordinal": 23,
-          "enabled": false
-        },
-        {
-          "text": "RWY 20R ^02L, AND RWY 20C ^02C CLOSED.",
-          "ordinal": 24,
-          "enabled": false
-        },
-        {
-          "text": "EXP RWY 02R. IF UNABLE DUE SCENERY, INFORM ATC.",
-          "ordinal": 25,
-          "enabled": false
-        },
-        {
           "text": "EXP RWY 20L. IF UNABLE DUE SCENERY, INFORM ATC.",
-          "ordinal": 26,
+          "ordinal": 22,
           "enabled": false
         }
       ],
