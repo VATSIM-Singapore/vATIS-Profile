@@ -2,7 +2,7 @@
   "name": "Singapore",
   "id": "92fa6917-8158-456f-b84b-68bc1a91f15c",
   "updateUrl": "https://raw.githubusercontent.com/VATSIM-Singapore/vATIS-Profile/refs/heads/main/vATIS%20Profile%20-%20Singapore.json",
-  "updateSerial": 2026091800,
+  "updateSerial": 2026100100,
   "stations": [
     {
       "id": "a8df3f38-5809-4954-b033-1f0026a5cf5e",
@@ -2094,6 +2094,11 @@
           "variableName": "INF",
           "text": "ATIS",
           "voice": "INFOR"
+        },
+        {
+          "variableName": "WSAC",
+          "text": "WSAC",
+          "voice": "CHANGI AIRBASE EAST"
         }
       ],
       "airportConditionDefinitions": [
@@ -2183,7 +2188,7 @@
           "enabled": false
         },
         {
-          "text": "RWY 03/^21 CLOSED.",
+          "text": "WSAC RWY 03/^21 CLOSED.",
           "ordinal": 18,
           "enabled": false
         },
@@ -2203,7 +2208,7 @@
           "enabled": false
         },
         {
-          "text": "RWY 21/^03 CLOSED.",
+          "text": "WSAC RWY 21/^03 CLOSED.",
           "ordinal": 22,
           "enabled": true
         }
@@ -8422,6 +8427,11 @@
           "variableName": "C3000",
           "text": "DEPS, INITIAL CMB 3000 FT",
           "voice": "DEPARTURES, INITIAL CLIMB {3000} FEET"
+        },
+        {
+          "variableName": "WSAC",
+          "text": "WSAC",
+          "voice": "CHANGI AIRBASE EAST"
         }
       ],
       "airportConditionDefinitions": [
@@ -8501,7 +8511,7 @@
           "enabled": false
         },
         {
-          "text": "RWY 03/^21 CLOSED.",
+          "text": "WSAC RWY 03/^21 CLOSED.",
           "ordinal": 16,
           "enabled": false
         },
@@ -8521,7 +8531,7 @@
           "enabled": false
         },
         {
-          "text": "RWY 21/^03 CLOSED.",
+          "text": "WSAC RWY 21/^03 CLOSED.",
           "ordinal": 20,
           "enabled": true
         },
