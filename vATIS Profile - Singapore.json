@@ -2230,18 +2230,8 @@
           "enabled": true
         },
         {
-          "text": "ADVS ATC IF UNBLE TO LND ON RWY 02C IF OFFERED.",
-          "ordinal": 4,
-          "enabled": false
-        },
-        {
-          "text": "ADVS ATC IF UNBLE TO LND ON RWY 20C IF OFFERED.",
-          "ordinal": 5,
-          "enabled": false
-        },
-        {
           "text": "VFR TFC CONDUCTING VIS CCTS IN THE VCNTY OF CHANGI AD.",
-          "ordinal": 6,
+          "ordinal": 4,
           "enabled": false
         }
       ]
